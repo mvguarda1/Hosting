@@ -1,0 +1,329 @@
+h1{
+	text-transform: uppercase;	
+	color: #051525;
+}
+
+h2{
+	margin: 0;
+}
+.template{
+	background-color: #666;
+	margin: 0;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+.container{
+	width: 980px;
+	background-color: #FFF;
+	margin: auto;
+	box-sizing: border-box;
+}
+.margens {
+	padding-left: 80px !important;
+	padding-right: 80px !important;
+}
+.colunas{
+	display: flex;
+}
+.menu {
+	background-color: #0B1A24;
+	padding: 30px 0 40px 0;
+	text-align: right;
+}
+.mobile{
+	display: none;	
+}
+.menu2 {
+	padding-top: 30px;
+	text-align: right;
+}
+.menu a, .menu2 a{
+	color: #999;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.menu a:hover{
+	color: #FFF;	
+}
+.menu2 a:hover{
+	color: #000;
+}
+.banner{
+	background-color:#224F6E;
+	height: 300px;
+}
+.principal {
+	text-align: center;
+	color: #FFF;
+	padding: 30px 0;
+}
+.principal ul{
+	list-style-type: none;
+	padding: 0;	
+}
+.principal li {
+	font-size: 12px;
+	padding:5px 0;	
+}
+.button{
+	padding: 5px 10px;
+	color: #FFF;
+	border: none;
+	margin-bottom: 15px;
+}
+.esquerda, .direita{
+	margin: 10px 0;
+	width: 30%;
+	text-transform: uppercase;
+}
+.esquerda h2, .direita h2{
+	padding: 20px 0;
+}
+.centro{
+	width: 40%;
+	text-transform: uppercase;
+}
+.centro h2{
+	padding: 25px 0;
+}
+.azul_claro{
+	background-color: #539bbd;
+}
+.azul_escuro{
+	background-color: #1e4661;
+}
+.shop{
+	padding: 30px 0;
+	border-top: solid 2px #CCC;
+	border-bottom: solid 2px #CCC;
+}
+.shop div{
+	width: 25%;	
+}
+.shop h2{
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.shop ul{
+	padding-left: 12px;
+}
+.shop li{
+	font-size: 13px;
+	color: #1e4661;
+	padding-bottom: 5px;
+}
+.shop p{
+	font-size: 9px;
+	color: #666;
+	text-transform: uppercase;
+	margin-right: 12px;
+}
+.shop .button{
+	float: right;	
+	margin: 20px;
+	text-transform: uppercase;
+}
+.right .button, .right p {
+	margin-right: 0;	
+}
+.mo{
+	font-size: 16px;
+	font-weight: normal;	
+}
+.claro {
+	color: #539bbd;
+}
+.escuro{
+	color: #1e4661;
+}
+.about div{
+	width: 50%;	
+}
+.about h3{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.about p{
+	font-size: 11px;
+	color: #666;
+	text-transform: uppercase;
+}
+.about div:first-child{
+	margin-right: 22px;
+}
+.final p{
+	text-align: right;
+	color: #666;
+	padding-right: 80px;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-top: 0;
+}
+.fale {
+	display: block;
+	margin: 80px 0px;
+}
+.fale *{
+	display: block;	
+	width: 400px;
+	margin: 20px 0;
+}
+.fale input, .fale textarea{
+	border: solid 1px #006;
+	padding: 4px;
+	border-radius: 5px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+.fale textarea{
+	height: 250px;
+	resize: none;
+}
+.enviar{
+	background-color: #006;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 80px;
+	height: 40px;
+	padding: 20px;
+	margin: auto;
+}
+.support {
+	color: #000;
+	text-align: left;
+}
+.support h2{
+	font-size: 18px;
+}
+.titulo {
+	cursor: pointer;
+}
+.descricao{
+	display: none;	
+}
+.dominios{
+	color: #000;	
+	padding: 10px 40px;
+}
+.dominios h1{
+	margin-bottom: 30px;	
+}
+.dominios h2{
+	margin-top: 80px;
+	background-color: #AAA;
+	padding: 10px 0;
+}
+.dominios p{
+	text-align: left;	
+}
+.hosting{
+	color: #000;	
+}
+.hosting div{
+	flex: 1;	
+	margin-bottom: 30px;
+	padding: 10px 20px;
+}
+.hosting img{
+	display: block;
+	width: 64px;
+	margin: 15px auto;
+}
+.hosting p {
+	color: #999;	
+}
+
+
+/* RESOLUÇÃO PARA CELULAR */
+
+@media screen and (max-width: 940px) {
+	.container{
+		width: 100%;
+	}
+	.banner {
+		display: none;
+	}
+	.margens{
+		padding: 0 !important;
+	}
+	.colunas{
+		flex-direction: column;	
+	}
+	.esquerda, .centro, .direita{
+		width: 92%;
+		margin: 10px;
+		padding: 0;
+	}
+	.shop {
+		padding: 0;	
+	}
+	.shop div {
+		width: 90%;
+		padding: 10px;
+		border-bottom: solid 2px #CCC;
+	}
+	.about div{
+		width: 90%;
+		padding: 10px;
+}
+	.final {
+		display: none;	
+	}
+	.shop p, .about p{
+		font-size: 14px;	
+	}
+	.menu {
+		display: none;	
+	}
+	.mobile{
+		display: block;
+		background-color: #000;
+		padding: 10px;
+	}
+	.mobile ul{
+		display: none;	
+	}
+	.mobile li {
+		margin-bottom: 10px;	
+	}
+	.mobile a{
+		color: #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	.mobile img{
+		vertical-align: middle;	
+	}
+	.fale{
+		margin: 0;	
+	}
+	.fale *{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.enviar{
+		margin-bottom: 30px;	
+	}
+	.support {
+		padding: 0 10px;	
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
